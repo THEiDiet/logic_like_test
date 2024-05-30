@@ -1,0 +1,34 @@
+@import "../../assets/variables.scss";
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  border: $border-l;
+  padding: 12px;
+  border-radius: 18px;
+  height: auto;
+}
+
+.tag {
+  border-radius: 12px;
+  padding: 12px;
+  display: inline-block;
+  width: 100%;
+  text-align: start;
+  cursor: pointer;
+  transition: background-color .3;
+
+  &:hover {
+    @include hover-bg($main-bg, 5);
+  }
+
+  &_active {
+    color: $accent-c;
+    background-color: $accent-bg;
+    transition: background-color .3;
+
+    &:hover {
+      @include hover-bg($accent-bg);
+    }
+  }
+}

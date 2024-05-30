@@ -1,0 +1,21 @@
+@use 'sass:color';
+
+// colors
+$accent-bg: #5FBF77;
+$accent-bg-hover: darken($accent-bg, 10);
+$accent-c: #fff;
+$main-c: #39414B;
+$main-bg: #fff;
+
+@mixin hover-bg($color, $amount: 10) {
+  background-color: darken($color, $amount);
+}
+
+// sizes
+$tag-panel-w: 264px;
+
+// shadows
+$box-shadow-l: 0px 10px 13px -4px #23235F30;
+
+// borders
+$border-l: 1px solid #CFCFE4;
